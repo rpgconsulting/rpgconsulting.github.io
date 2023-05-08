@@ -7,6 +7,9 @@ body {
   height: 100vh;
 }
 
+.test {
+  padding-top: 65px;
+}
 .c-img {
   height: 100%;
   object-fit: cover;

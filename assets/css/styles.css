@@ -1,0 +1,27 @@
+body {
+  height: 3000px;
+  overflow-x: hidden;
+}
+
+.c-item {
+  height: 100vh;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+.dropdown-menu {
+  transition: all 2s;
+}
+
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}

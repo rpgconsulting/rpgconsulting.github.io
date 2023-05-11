@@ -1,14 +1,10 @@
-body {
-  height: 3000px;
-  overflow-x: hidden;
-}
-
 .c-item {
   height: 100vh;
 }
 
-.test {
+.section {
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .nav-item {
@@ -18,7 +14,7 @@ body {
 .c-img {
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.3);
 }
 
 .navbar {

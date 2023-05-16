@@ -35,16 +35,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#consulting">Tanácsadás</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Szolgáltatások
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">HACCP</a></li>
-                            <li><a class="dropdown-item" href="#">HR</a></li>
-                            <li><a class="dropdown-item" href="#">EUs pályázatok</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Szolgáltatások</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#references">Referenciák</a>
@@ -81,7 +73,7 @@
                 <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
                     <p class="fs-1 text-uppercase">Tudjon meg rólam többet</p>
                     <h1 class="display-1 fw-bolder">Ismerje meg szakmai utazásomat!</h1>
-                    <a href="#consulting"><button class="btn btn-primary mt-5" href="#aboutme">Mutasd!</button></a>
+                    <a href="#aboutme"><button class="btn btn-primary mt-5" href="#aboutme">Mutasd!</button></a>
                 </div>
             </div>
             <div class="carousel-item c-item" data-bs-interval="5000">
@@ -89,7 +81,7 @@
                 <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center">
                     <p class="fs-1 text-uppercase">Szolgáltatásaim</p>
                     <h1 class="display-1 fw-bolder">Tudja meg miben segíthetek</h1>
-                    <a href="#consulting"><button class="btn btn-primary mt-5" href="#consulting">Bővebben!</button></a>
+                    <a href="#consulting"><button class="btn btn-primary mt-5" href="#services">Bővebben!</button></a>
                 </div>
             </div>
         </div>
@@ -102,7 +94,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <section class="bg-light" id="consulting">
+    <section class="bg-dark-subtle" id="consulting">
         <div class="container position-relative section">
             <h1 class="text-center">Tanácsadás</h1>
             <hr>
@@ -293,6 +285,60 @@
             </div>
         </div>
     </section>
+    <section id="services">
+        <div class="section align-items-center" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">Szolgáltatások</h1>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                            <div class="card h-100">
+                                <img src="https://megvedelek.hu/wp-content/uploads/2019/08/haccp_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">HACCP</h5>
+                                    <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
+                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                            <div class="card h-100">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">EU pályázatok</h5>
+                                    <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
+                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                            <div class="card h-100">
+                                <img src="https://maxpeoplehr.com/wp-content/uploads/2018/02/iStock-522259169.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Human Resources</h5>
+                                    <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
+                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                            <div class="card h-100">
+                                <img src="https://i2-prod.liverpoolecho.co.uk/incoming/article26205867.ece/ALTERNATES/s1200c/0_Henry-the-hoover.jpg" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">ToBeDecided</h5>
+                                    <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
+                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="references">
         <div class="section" id="references">
             <div class="container">
@@ -332,8 +378,10 @@
                                         léptem be a Gundel étterem ajtaján. Akkoriban Kalla Kálmán Séf Úr igazgatta az
                                         étterem „lelkét” a konyhát, melynek miliője azonnal elvarázsolt és örökre
                                         magához láncolt. A folyamatos pörgés és jóhangulat mellett, végtelen tisztelet
-                                        és alázat illette meg a <strong>minőségi alapanyagot</strong>, az ételkészítési <strong>technológiákat</strong> s
-                                        persze mindenekelőtt, a <strong>vendéget</strong>. Mindez olyan természetesen áradt a
+                                        és alázat illette meg a <strong>minőségi alapanyagot</strong>, az ételkészítési
+                                        <strong>technológiákat</strong> s
+                                        persze mindenekelőtt, a <strong>vendéget</strong>. Mindez olyan természetesen
+                                        áradt a
                                         mesterimből, hogy nekem sem telhet el úgy munkanapom, hogy szem elől tévesszem
                                         ezeket az alapvetéseket.
                                     </div>
@@ -379,7 +427,8 @@
                                         koromtól olyan szakmai kihívások sorával kerültem szembe, melyekkel nagyon kevés
                                         pályatársam.
                                         <ul>
-                                            <li><strong>Chef</strong>-ként össze kellett hangolnom, egy vadonatúj belvárosi étterem
+                                            <li><strong>Chef</strong>-ként össze kellett hangolnom, egy vadonatúj
+                                                belvárosi étterem
                                                 nyitásának
                                                 előkészületeit. Kezdve a konyha megtervezésétől, beüzemelésén át, a
                                                 kollégák
@@ -397,7 +446,8 @@
                                                 találkoztam vendégeinkkel.
                                             </li>
                                             <li>
-                                                Újabb lépésként a cégcsoport <strong>corporate chef</strong> pozícióját kaptam meg, így
+                                                Újabb lépésként a cégcsoport <strong>corporate chef</strong> pozícióját
+                                                kaptam meg, így
                                                 került
                                                 irányításom alá, egy olyan üzemikonyha is, mely összesen 12
                                                 vendéglátóhely
@@ -414,7 +464,8 @@
                                                 feladatot és problémát kellett megoldani, s addigra már összesen 94
                                                 főnyi
                                                 személyzet mindennapjait szervezni.
-                                                Ez a fantasztikus időszak pedig <strong>ügyvezető igazgató-helyettes</strong> és
+                                                Ez a fantasztikus időszak pedig <strong>ügyvezető
+                                                    igazgató-helyettes</strong> és
                                                 <strong>résztulajdonosként</strong> ért véget.
                                             </li>
                                         </ul>
@@ -431,20 +482,25 @@
                                 <div id="streetFood" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                     data-bs-parent="#aboutMeAccordion">
                                     <div class="accordion-body">
-                                        Karrierem legutóbbi nagy fejezete egy <strong>Európai Uniós pályázat</strong> megnyerésével
+                                        Karrierem legutóbbi nagy fejezete egy <strong>Európai Uniós pályázat</strong>
+                                        megnyerésével
                                         kezdődött. A támogatást egy gyorsétterem létrehozására kaptuk, mely nagy
                                         sikerrel meg is valósult, sőt igazi dédelgetett szerelem lett belőle. A
                                         koncepció tehát két tapasztalt szakács öröm főzéséről szólt, kiemelt hangsúlyt
-                                        fektetve az <strong>alapanyagok</strong>ra, mindezt nagyon nyomott áron kínálva, a betérő
+                                        fektetve az <strong>alapanyagok</strong>ra, mindezt nagyon nyomott áron kínálva,
+                                        a betérő
                                         vendégeknek. A folyamatos stabil minőség mellett, határozott szándékunk volt,
-                                        hogy ebben a szférában is megmutassuk milyen az <strong>igényes</strong> és <strong>minőségi vendéglátás.</strong>
+                                        hogy ebben a szférában is megmutassuk milyen az <strong>igényes</strong> és
+                                        <strong>minőségi vendéglátás.</strong>
                                         Nagyon rövid idő alatt szerencsésen híre ment éttermünknek, így az üzelti
                                         tervünkben szereplő napi 150 fő hamarosan elérte a hihetetlen 4-5 de akár 600
                                         fős napi vendégszámot. Ez amúgy sem rossz teljesítmény, de egy 64 négyzetméteres
-                                        üzlethelységtől, valódi művészetnek számít. <strong>Tulajdonos</strong>ként a napok nagyon korán
+                                        üzlethelységtől, valódi művészetnek számít. <strong>Tulajdonos</strong>ként a
+                                        napok nagyon korán
                                         kezdődtek, hiszen át kellett venni, és minőségileg ellenőrizni a beérkező
                                         árukat. Nap mint nap frissen el kellett készíteni azokat az ételeket, melyek a
-                                        legnagyobb valószínűség szerint aznap el is fogytak. Nyitás előtt <strong>árú rendelés</strong>,
+                                        legnagyobb valószínűség szerint aznap el is fogytak. Nyitás előtt <strong>árú
+                                            rendelés</strong>,
                                         némi <strong>social media</strong> kommunikáció, majd egészen zárásig
                                     </div>
                                 </div>
@@ -455,8 +511,8 @@
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="section">
+    <section id="contact" class="bg-light">
+        <div class="last-section">
             <div class="container">
                 <div class="row">
                     <div class="col">
@@ -464,21 +520,32 @@
                         <hr>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-5">
-                        <i class="fa fa-phone fa-2xl" aria-hidden="true"></i>
-                        <span class="pt-5">+36 30 549 39 23</span>
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-lg-6 pb-4 pb-sm-0 pb-md-0">
+                        <h3 style="font-size: 70px" class="text-center text-">Forduljon hozzám bizalommal!</h3>
+                        <div class="contact-info text-center"
+                            style="padding-top: 30px; margin-top:30px;border-top: solid">
+                            <i class="fa fa-phone fa-2xl" aria-hidden="true"></i>
+                            <span class="pt-5" style="font-size: 25px;padding-left: 20px;font-weight: bolder;">+36 30
+                                549
+                                39 23</span>
+                        </div>
+                        <div class="contact-info text-center"
+                            style="padding-top: 30px; margin-top:30px;border-top: solid">
+                            <i class="fa fa-envelope fa-2xl" aria-hidden="true"></i>
+                            <span class="pt-5" style="font-size: 25px;padding-left: 20px;"><a
+                                    href="mailto:contact@regospeter.com">contact@regospeter.com</a></span>
+                        </div>
                     </div>
-                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center p-5">
-                        <i class="fa fa-envelope fa-2xl" aria-hidden="true"></i>
-                        <span class="pt-5"><a href="mailto:contact@regospeter.com">contact@regospeter.com</a></span>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/images/main.png">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <div class="container-fluid">
-        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
             <div class="col-md-4 text-center">
                 <span class="mb-3 mb-md-0 text-muted">© 2023 Regős Péter</span>
             </div>

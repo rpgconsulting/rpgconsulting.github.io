@@ -94,7 +94,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <section class="bg-dark-subtle" id="consulting">
+    <section class="bg-light" id="consulting">
         <div class="container position-relative section">
             <h1 class="text-center">Tanácsadás</h1>
             <hr>
@@ -296,41 +296,57 @@
                     <div class="row ms-auto me-auto">
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
                             <div class="card h-100">
-                                <img src="https://megvedelek.hu/wp-content/uploads/2019/08/haccp_1.jpg" class="card-img-top" alt="...">
+                                <img src="https://megvedelek.hu/wp-content/uploads/2019/08/haccp_1.jpg"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">HACCP</h5>
                                     <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
-                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#haccpModal">
+                                        Bővebben...
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
                             <div class="card h-100">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png" class="card-img-top" alt="...">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/255px-Flag_of_Europe.svg.png"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">EU pályázatok</h5>
                                     <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
-                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#euModal">
+                                    Bővebben...
+                                </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
                             <div class="card h-100">
-                                <img src="https://maxpeoplehr.com/wp-content/uploads/2018/02/iStock-522259169.jpg" class="card-img-top" alt="...">
+                                <img src="https://maxpeoplehr.com/wp-content/uploads/2018/02/iStock-522259169.jpg"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Human Resources</h5>
                                     <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
-                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#hrModal">
+                                    Bővebben...
+                                </button>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
                             <div class="card h-100">
-                                <img src="https://i2-prod.liverpoolecho.co.uk/incoming/article26205867.ece/ALTERNATES/s1200c/0_Henry-the-hoover.jpg" class="card-img-top" alt="...">
+                                <img src="https://i2-prod.liverpoolecho.co.uk/incoming/article26205867.ece/ALTERNATES/s1200c/0_Henry-the-hoover.jpg"
+                                    class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">ToBeDecided</h5>
                                     <p class="card-text">Rövid bemutató szöveg, hogy mi is ez</p>
-                                    <a href="#" class="btn btn-primary">Bővebben...</a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#extraModal">
+                                    Bővebben...
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +355,7 @@
             </div>
         </div>
     </section>
-    <section id="references">
+    <section id="references" class="bg-light">
         <div class="section" id="references">
             <div class="container">
                 <div class="row">
@@ -352,7 +368,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light" id="aboutme">
+    <section id="aboutme">
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -550,6 +566,76 @@
                 <span class="mb-3 mb-md-0 text-muted">© 2023 Regős Péter</span>
             </div>
         </footer>
+    </div>
+
+    <!-- Modals -->
+    <!-- HACCP Modal -->
+    <div class="modal fade" id="haccpModal" tabindex="-1" aria-labelledby="haccpModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="haccpModal">HACCP Tanácsadás</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EU Modal -->
+    <div class="modal fade" id="euModal" tabindex="-1" aria-labelledby="euModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="euModal">EU Pályázatíró Tanácsadás</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HR Modal -->
+    <div class="modal fade" id="hrModal" tabindex="-1" aria-labelledby="hrModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="hrModal">HR gyakorlati Tanácsadás</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Extra Modal -->
+    <div class="modal fade" id="extraModal" tabindex="-1" aria-labelledby="extraModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="extraModal">???</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./assets/scripts/site.js"></script>
 </body>

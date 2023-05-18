@@ -20,8 +20,8 @@
     <link href="./assets/images/favicon.ico" type="image/x-icon" rel="icon">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+<body data-bs-spy="scroll" data-bs-target="#navBar">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navBar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./assets/images/GM_logo.png" alt="GM_Consulting" style="width:70px;" class="rounded-pill">
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#consulting">Tanácsadás</a>
+                        <a class="nav-link" href="#consulting">Tanácsadás</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Szolgáltatások</a>
@@ -94,8 +94,8 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <section class="bg-light" id="consulting">
-        <div class="container position-relative section">
+    <section class="bg-light">
+        <div class="container position-relative section" id="consulting">
             <h1 class="text-center">Tanácsadás</h1>
             <hr>
             <div class="row">

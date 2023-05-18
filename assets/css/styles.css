@@ -66,6 +66,13 @@ p {
   text-align: center;
 }
 
+li >.active {
+  color: rgb(232,25,60) !important;
+  font-weight: bold !important;
+  transition: all 0.2s !important;
+  -webkit-transition: all 0.5s !important;
+}
+
 .c-img {
   height: 100%;
   object-fit: cover;

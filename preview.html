@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regős Péter</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link href="./assets/images/favicon.ico" type="image/x-icon" rel="icon">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navBar">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/GM_logo.png" alt="GM_Consulting" style="width:70px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tanacsadas">Tanácsadás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#referenciak">Referenciák</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rolam">Rólam</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="main-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item" data-bs-interval="5000">
+                <img src="./assets/images/carousel_main.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-end mb-5 pb-5">
+                    <p class="fs-1 text-uppercase">Regős Péter</p>
+                    <h1 class="display-1 fw-bolder">Gasztronómiai <br> Tanácsadó</h1>
+                    <a href="#tanacsadas"><button class="carousel-btn mt-5" href="#tanacsadas">Bővebben</button></a>
+                </div>
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="5000">
+                <img src="./assets/images/carousel_aboutme.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-end mb-5 pb-5">
+                    <p class="fs-1 text-uppercase text-center">Tudjon meg rólam többet</p>
+                    <h1 class="display-1 fw-bolder">Ismerje meg szakmai utazásomat!</h1>
+                    <a href="#rolam"><button class="carousel-btn mt-5" href="#rolam">Bővebben</button></a>
+                </div>
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="5000">
+                <img src="./assets/images/carousel_services.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-end mb-5 pb-5">
+                    <p class="fs-1 text-uppercase">Szolgáltatásaim</p>
+                    <h1 class="display-1 fw-bolder">Tudja meg miben segíthetek</h1>
+                    <a href="#szolgaltatasok"><button class="carousel-btn mt-5" href="#szolgaltatasok">Bővebben</button></a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="dark-section">
+        <div class="container position-relative section" id="tanacsadas">
+            <h1 class="text-center header">Tanácsadás</h1>
+            <hr>
+            <div class="row">
+                <p class="sub-header">
+                    Ki az a gasztronómiai tanácsadó?
+                </p>
+                <p>
+                    A gasztronómiai tanácsadó széleskörű vendéglátó-, szálloda-, és élelmiszeripari szakértelemmel
+                    rendelkezik, tudását és tapasztalatait felhasználva objektív elemzést készít az Ön
+                    vállalkozásáról. Tanácsai függetlenek attól, hogy szállodáról, önálló étteremről, vagy egy egész
+                    vendéglátásra szakosodott üzletláncról készülnek, egy tapasztalt tanácsadó rámutat az
+                    erősségekre és a gyengeségekre egyaránt. A tanácsadó az Ön személyes munkatársa, akinek ötleteit
+                    feldobhatja, és aki optimalizálja szervezete teljesítményét és jólétét.
+                </p>
+                <p class="lead" style="font-size: large; text-align: center;">
+                    „Egyszerű, kézenfekvő megoldások vesznek körül,<br> amelyek drámaian növelhetik bevételét, hatalmát,
+                    befolyását és sikerét. <br> A probléma az, hogy egyszerűen nem látod őket.”
+                </p> <span style="text-align: center;">- Jay Abraham </span>
+                <p class="mt-4">Mindezen kívül a tanácsadó segít minimalizálni az éttermek megnyitásával járó
+                    kockázatokat és költségeket. Adott esetben elősegíti az üzletikoncepció kidolgozását, az üzleti
+                    modell auditálását, az étlap/receptek kidolgozásában való együttműködést, a konyhai- és
+                    kiszolgáló személyzet képzésének előkészítését és lebonyolítását, és bármi mást, amire szüksége
+                    van egy kiemelkedő étterem megnyitásához. Ha szakértő tanácsadóval együttműködve dolgozik növeli
+                    a siker esélyét, az olyan összetett vagy technikai elemek megvalósításánál, mint a munkaállomás
+                    kialakítása (ergonómia/design szempontból), stratégiai pénzügyi elemzés, fenntarthatóság és
+                    megtérülés. Étel és italrendszer-tervezés, termékpaletta összeállítás. Ez a segítség azt is
+                    biztosítja, hogy ne veszítse el a fókuszt az alapvető céljairól. A tanácsadó gondoskodik arról,
+                    hogy szervezete leendő ügyfeleinek a legjobb szolgáltatást nyújtsa, s közben a gazdasági
+                    hátteret is biztosítja a rentábilis üzletmenethez.</p>
+                <p class="sub-header" style="text-align: center; font-size: x-large;">
+                    „A gasztronómiai tanácsadó és a konyha”
+                </p>
+                <p>A konyha általában a vendéglátóhelyek „lelke” és éppen ezért egy rendkívül szenzitív terület. A
+                    tanácsadó elsőszámú feladata, hogy összehangolja a konyhaivezetőt, a tulajdonossal és az
+                    értékesítő csapattal. Egy stabil konyhán mindig előre kell ismerni a várható eseményeket, de a
+                    váratlanokra is higgadtan kell reagálni. A nyereséges üzlet záloga nem egy „jó chef”, sokkal
+                    inkább egy csapat összehangolt munkája, így a tökéletes ajánlat elkészítésekor tisztában kell
+                    lennünk az aktuális alapanyag- és energia árakkal, illetve a nyersanyag és eszköz készletekkel.
+                    A folyamatosan növekvő nyereség érdekében, elengedhetetlen a konyhai- és kiszolgáló személyzet
+                    képzése, az élelmiszer- és energiaköltségek folyamatos hatékony ellenőrzése, a szervezettség és
+                    a jövedelmezőség javítása érdekében. </p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6 pb-4">
+                    <p style="text-align: center; font-size: large; font-weight: 500;">
+                        Miért érdemes gasztronómiai tanácsadót alkalmazni, amennyiben Ön vendéglátóhely nyitását
+                        tervezi?
+                    </p>
+                    <div class="accordion" id="beforeCompanyAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-beforeHeadingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseBeforeOne" aria-expanded="false"
+                                    aria-controls="flush-collapseBeforeOne">
+                                    Mennyi az elegendő tőke?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseBeforeOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-beforeHeadingOne" data-bs-parent="#beforeCompanyAccordion">
+                                <div class="accordion-body">Az elegendő tőke relatív fogalom. Mennyi is az ami elég,
+                                    és milyen hosszúra kell tervezni azt a kezdeti időszakot, amikor még
+                                    finanszírozni kell, vállalkozása mindennapjait? Ugye Ön is hallott már olyan
+                                    esetről amikor még a nyitás napja előtt elfogyott a befektetni szánt tőke, vagy
+                                    esetleg éppen a nyitásig volt elég, hiszen nem volt precízen megtervezve a
+                                    beruházás? A nyitás utáni időszak szintén kritikus. Könnyedén előfordulhat
+                                    ugyanis, hogy megfelelő tervezés hiányában súlyos százezrek vagy akár milliók
+                                    folyhatnak el a legkülönbözőbb csatornákon. Ilyenek például a rosszul
+                                    megválasztott beszállítók, a helytelenül beállított marketing kommunikáció, de
+                                    jelentős összegeket forgácsolhat el a nem megfelelő képzettségű és létszámú
+                                    személyzet is. Rengeteg stressztől kímélheti meg önmagát, amennyiben egy
+                                    tapasztalt szakértő segítségével rövid- és középtávú terveket készíttet,
+                                    melyeket szabályos időközönként áttekintve pontos képet kaphat arról, hogy a
+                                    megfelelő irányba halad-e vállalkozása. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-beforeHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseBeforeTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseBeforeTwo">
+                                    Melyik a legfelelő hely és elhelyezkedés?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseBeforeTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-beforeHeadingTwo" data-bs-parent="#beforeCompanyAccordion">
+                                <div class="accordion-body">Az persze mindenki számára világos, hogy a forgalmas,
+                                    központi helyen lévő üzlethelységek nagyobb eséllyel válnak sikeressé, mint a
+                                    nehezebben megközelíthető versenytársaik. De azzal is tisztában vagyunk-e vajon,
+                                    hogy a kiszemelt üzlethelység megfelelő méretű-e? Tudjuk-e, hogy mennyi és
+                                    milyen kiszolgáló helységekre lesz szükség a jogszabályok szerint? Ki tudjuk-e
+                                    kalkulálni pontosan, hogy mekkora legyen a konyha – vendégtér arányaiban? Vagy
+                                    másszóval, adott méretű - és felszerelésű - konyhából ki tudjuk-e szolgálni, a
+                                    terveinkben szereplő nyereséghez szükséges mennyiségű vendéget? </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-beforeHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseBeforeThree" aria-expanded="false"
+                                    aria-controls="flush-collapseBeforeThree">
+                                    Milyen a jó étlap?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseBeforeThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-beforeHeadingThree" data-bs-parent="#beforeCompanyAccordion">
+                                <div class="accordion-body">Elengedhetetlenül fontos még a tervezés időszakában
+                                    pontosan tisztában lenni azzal, hogy milyen szolgáltatást szeretnénk nyújtani
+                                    vendégeink számára. Kis túlzással még az étlapot is ismerni kell, hiszen a
+                                    megálmodott termékpalettához kell berendezni a konyhát, a megfelelő
+                                    konyhatechnológiai eszközökkel, hűtőkapacitással, tálaló eszközökkel, de még a
+                                    személyzet létszámát is ehhez kell optimalizálni. Ez nincs másképp a
+                                    szállodákban sem. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-beforeHeadingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseBeforeFour" aria-expanded="false"
+                                    aria-controls="flush-collapseBeforeFour">
+                                    Milyen egy jó vezető?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseBeforeFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-beforeHeadingFour" data-bs-parent="#beforeCompanyAccordion">
+                                <div class="accordion-body">Egy új vendéglátóhely nyitásakor elmondhatatlanul
+                                    fontos, hogy milyen vezetőket és beosztottakat alkalmazunk. Általában ezen
+                                    munkavállalók mindegyike különböző tapasztalati szintekkel és más-más előélettel
+                                    rendelkezik. Önnek azonban éppen arra van szüksége, hogy csapata minden tagja
+                                    világosan értse a vállalkozás célját, s így tudja őszintén és hitelesen
+                                    képviselni azt. Ehhez azonban a megfelelő emberek kiválasztása és folyamatos
+                                    tréningezése szükséges! </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p style="text-align: center; font-size: large; font-weight: 500;">
+                        Miért érdemes gasztronómiai tanácsadót alkalmazni, amennyiben Ön már működő
+                        vendéglátóhellyel rendelkezik?
+                    </p>
+                    <div class="accordion" id="afterCompanyAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-afterHeadingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-studentYears" aria-expanded="false"
+                                    aria-controls="flush-studentYears">
+                                    Amennyiben Ön már egy nyereséges vállalkozó
+                                </button>
+                            </h2>
+                            <div id="flush-studentYears" class="accordion-collapse collapse"
+                                aria-labelledby="flush-afterHeadingOne" data-bs-parent="#afterCompanyAccordion">
+                                <div class="accordion-body">Talán hihetetlenül hangzik, de még a nyereséget termelő
+                                    vállalkozásoknak is nagy segítségére lehet egy független tanácsadó. A
+                                    legtökéletesebben
+                                    működő éttermek/szállodák is havi akár milliós összegeket spórolhatnak meg, ha
+                                    átvilágítják beszerzési forrásaikat, optimalizálják munkafolyamataikat, és
+                                    minimalizálják kiadásaikat. Az is lehet, hogy vállalkozása olyan technológiai vagy
+                                    személyzeti problémákkal küzd, amelyekről Ön nem is értesül, vagy nem gondolná, hogy
+                                    azokból gyökeredzik a probléma. Ezen hibák feltárásában és megoldásában is
+                                    segítségükre
+                                    lehetünk.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-afterHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Amennyiben az Ön vállalkozása nehézségekkel küzd
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-afterHeadingTwo" data-bs-parent="#afterCompanyAccordion">
+                                <div class="accordion-body">Manapság a válságok korát éljük. Egymást érik a gazdasági
+                                    szigorítások, az energia- vagy munkaerőpiaci problémák, esetleges karanténnal
+                                    fenyegető
+                                    járványok. Válság esetén a tanácsadó átvilágítja a teljes egységet, megvizsgálja a
+                                    vélt
+                                    vagy valós problémákat. Javaslatokat tesz, és konkrét cselekvési terveket állít
+                                    össze.
+                                    Ezenkívül segít a kárelhárításban, a kommunikációban és végső soron a válság
+                                    megoldásában.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="szolgaltatasok" class="light-section">
+        <div class="section align-items-center" id="szolgaltatasok">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center header">Szolgáltatások</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row ms-auto me-auto">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_opearations.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Operations Management</h5>
+                                <p class="card-text text-center"> Az üzemeltetési menedzsment olyan terület, amely a
+                                    szervezeti
+                                    folyamatok tervezését, és irányítását felügyeli a termékek és szolgáltatások
+                                    hatékony előállítása érdekében.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_branding.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Gastro Sales és Branding tanácsadás</h5>
+                                <p class="card-text text-center">Márkaépítési folyamatok és élelmiszeripari értékésítői
+                                    szakértői
+                                    tanácsadás vállalkozások számára.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_supplyplan.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Kínálat tervezés</h5>
+                                <p class="card-text text-center">A kínálat tervezés a cége által kínált termékek és
+                                    szolgáltatások
+                                    stratégiai tervezése és fejlesztése a piaci igények és célok alapján.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_hr.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Human Resources</h5>
+                                <p class="card-text text-center">A humánerőforrás területén nyújtott szakértői
+                                    tanácsadás és
+                                    támogatás a vállalatoknak az emberi erőforrások hatékony kezelése és fejlesztése
+                                    érdekében.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ms-auto me-auto justify-content-center">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_marketing.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Gasztro marketing</h5>
+                                <p class="card-text text-center"> Piacvezetési és promóciós tanácsadás a célközönség
+                                    elérése és ügyfélnövekedés érdekében.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_socialmedia.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Social Media Specialist</h5>
+                                <p class="card-text text-center">Tanácsadás a social media platformokon való hatékony
+                                    jelenlétért és stratégiák
+                                    kidolgozásáért, hogy növelje egy vállalkozás vagy márka online jelenlétét és
+                                    követőinek elkötelezettségét</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-2">
+                        <div class="card h-100">
+                            <img src="./assets/images/services_haccp.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">HACCP szaktanácsadás</h5>
+                                <p class="card-text text-center">Segítek vállalkozásoknak az élelmiszerbiztonsági
+                                    rendszerek kidolgozásában és megvalósításában a HACCP (veszélyelemzés és kritikus
+                                    ellenőrzési pontok) alapelvei szerint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="referenciak" class="bg-light">
+        <div class="section dark-section" id="referenciak">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center header">Referenciák</h1>
+                        <hr>
+                        <h1 class="text-center text-uppercase text-secondary">Hamarosan...</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rolam">
+        <div class="section light-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center header">Rólam</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <p>Üdv! <br><br> Regős Péter vagyok, aki a kulináris világban kezdte pályafutását, és mára egy
+                            saját gasztronómiai tanácsadó céget indított.</p>
+                        <p>A szakmában töltött számos év alatt, rengeteg értékes tapasztalatot szereztem. A különböző
+                            éttermekben és szállodákban eltöltött idő alatt olyan készségeket és technikákat
+                            sajátítottam el, amelyek tovább fejlesztették a kulináris tudásomat.</p>
+                        <p>Az évek során egyre nagyobb vágyam támadt arra, hogy átadjam tudásom és tapasztalatait
+                            másoknak. Észrevettem, hogy sok étterem és vállalkozás küzd a menütervezéssel, az
+                            alapanyagok kiválasztásával, a hatékony működéssel és az üzleti stratégiával kapcsolatos
+                            kérdésekben. Ez inspirált arra, hogy létrehozzak egy saját gasztronómiai tanácsadó céget.
+                        </p>
+                        <p>
+                            Az alábbiakban olvashat életem legmeghatározóbb állomásaimról professzionális karrierem
+                            során.
+                        </p>
+                    </div>
+                    <div class="col-xl-6">
+                        <img src="./assets/images/aboutme_photos.jpg" style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="accordion" id="aboutMeAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#studentYears" aria-expanded="false" aria-controls="studentYears">
+                                    Tanuló éveim
+                                </button>
+                            </h2>
+                            <div id="studentYears" class="accordion-collapse collapse collapse"
+                                aria-labelledby="headingOne" data-bs-parent="#aboutMeAccordion">
+                                <div class="accordion-body">
+                                    Arról nincsenek pontos adataim, hogy mikor vált -imádott- hivatásommá a
+                                    vendéglátás, de biztosan régebben volt, mint az első napom a konyhán. 1996-ban
+                                    léptem be a Gundel étterem ajtaján. Akkoriban Kalla Kálmán Séf Úr igazgatta az
+                                    étterem „lelkét” a konyhát, melynek miliője azonnal elvarázsolt és örökre
+                                    magához láncolt. A folyamatos pörgés és jóhangulat mellett, végtelen tisztelet
+                                    és alázat illette meg a <strong>minőségi alapanyagot</strong>, az ételkészítési
+                                    <strong>technológiákat</strong> s
+                                    persze mindenekelőtt, a <strong>vendéget</strong>. Mindez olyan természetesen
+                                    áradt a
+                                    mesterimből, hogy nekem sem telhet el úgy munkanapom, hogy szem elől tévesszem
+                                    ezeket az alapvetéseket.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#internationalExperiences" aria-expanded="false"
+                                    aria-controls="internationalExperiences">
+                                    Nemzetközi tapasztalatok
+                                </button>
+                            </h2>
+                            <div id="internationalExperiences" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#aboutMeAccordion">
+                                <div class="accordion-body">
+                                    A Gundeles évek után Németországba vezetett az utam, ahol alig 20 évesen egy
+                                    szerencsés véletlen folytán rám maradt a konyha irányítása, abban a hangulatos
+                                    kis családi szállodában, ahol végül közel két évet dolgoztam. Fantasztikus
+                                    kihívás volt, és a mai napig is hálával tartozom a szálloda igazgatójának, aki
+                                    hatalmas türelemmel nevelt a híres német precizitásra és gazdaságosságra. A
+                                    következő állomás három évig tartott, mely idő alatt, előbb sous chef-ként majd
+                                    konyhafőnökként megismerhettem Írország fantasztikus szigetét.
+                                    Haza térve egy belvárosi étterem megnyitását kaptam feladatul egy olyan
+                                    cégcsoportban, mely több vendéglátóipari egységet is üzemeltetett.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#greatestExperience" aria-expanded="false"
+                                    aria-controls="greatestExperience">
+                                    A legnagyobb tapasztalat
+                                </button>
+                            </h2>
+                            <div id="greatestExperience" class="accordion-collapse collapse"
+                                aria-labelledby="headingThree" data-bs-parent="#aboutMeAccordion">
+                                <div class="accordion-body">
+                                    Ebben a közel nyolc éves korszakban éltem át mindazt, amiért ma nyugodtan
+                                    kijelenthetem, gasztronómiai szakértő vagyok. Nyolc év alatt mindössze 26 éves
+                                    koromtól olyan szakmai kihívások sorával kerültem szembe, melyekkel nagyon kevés
+                                    pályatársam.
+                                    <ul>
+                                        <li><strong>Chef</strong>-ként össze kellett hangolnom, egy vadonatúj
+                                            belvárosi étterem
+                                            nyitásának
+                                            előkészületeit. Kezdve a konyha megtervezésétől, beüzemelésén át, a
+                                            kollégák
+                                            kiválasztását és betanítását.</li>
+                                        <li>
+                                            Rövid idő után a konyha vezetése mellett teljhatalmat kaptam és
+                                            <strong>üzletvezetőként</strong>
+                                            már a felszolgálók mindennapjait is én irányítottam. Egyszemélyben
+                                            éreztem magam
+                                            felelősnek mindenért ami az étteremmel kapcsolatban történik, így részt
+                                            vettem a
+                                            beszállítók kiválasztásánál, és folyamatos átvilágításában, az ét- és
+                                            itallap
+                                            elkészítésénél, a kollégák folyamatos képzésében. S persze nap mint nap
+                                            találkoztam vendégeinkkel.
+                                        </li>
+                                        <li>
+                                            Újabb lépésként a cégcsoport <strong>corporate chef</strong> pozícióját
+                                            kaptam meg, így
+                                            került
+                                            irányításom alá, egy olyan üzemikonyha is, mely összesen 12
+                                            vendéglátóhely
+                                            étellel kapcsolatos összes igényét kielégítette. Konyhai csapatunk
+                                            létszáma
+                                            ekkor már elérte, sőt meghaladta a 35 főt is. A kiszolgált
+                                            vendéglátóegységek
+                                            között pedig nem csak első osztályú éttermek voltak, hanem egy napi
+                                            közel 1000
+                                            vendéget kiszolgáló, emelt szintű önkiszolgáló étterem, rendezvény- és
+                                            konferencia központ, egyetemi szórakozóhelyek, és büfék, sőt egy
+                                            pizzéria és
+                                            szálloda konyhája is. Rendkívül összetett feladat volt, amiben számtalan
+                                            feladatot és problémát kellett megoldani, s addigra már összesen 94
+                                            főnyi
+                                            személyzet mindennapjait szervezni.
+                                            Ez a fantasztikus időszak pedig <strong>ügyvezető
+                                                igazgató-helyettes</strong> és
+                                            <strong>résztulajdonosként</strong> ért véget.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#streetFood" aria-expanded="false" aria-controls="streetFood">
+                                    Street food – nem fast food
+                                </button>
+                            </h2>
+                            <div id="streetFood" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#aboutMeAccordion">
+                                <div class="accordion-body">
+                                    Karrierem legutóbbi nagy fejezete egy <strong>Európai Uniós pályázat</strong>
+                                    megnyerésével
+                                    kezdődött. A támogatást egy gyorsétterem létrehozására kaptuk, mely nagy
+                                    sikerrel meg is valósult, sőt igazi dédelgetett szerelem lett belőle. A
+                                    koncepció tehát két tapasztalt szakács öröm főzéséről szólt, kiemelt hangsúlyt
+                                    fektetve az <strong>alapanyagok</strong>ra, mindezt nagyon nyomott áron kínálva,
+                                    a betérő
+                                    vendégeknek. A folyamatos stabil minőség mellett, határozott szándékunk volt,
+                                    hogy ebben a szférában is megmutassuk milyen az <strong>igényes</strong> és
+                                    <strong>minőségi vendéglátás.</strong>
+                                    Nagyon rövid idő alatt szerencsésen híre ment éttermünknek, így az üzelti
+                                    tervünkben szereplő napi 150 fő hamarosan elérte a hihetetlen 4-5 de akár 600
+                                    fős napi vendégszámot. Ez amúgy sem rossz teljesítmény, de egy 64 négyzetméteres
+                                    üzlethelységtől, valódi művészetnek számít. <strong>Tulajdonos</strong>ként a
+                                    napok nagyon korán
+                                    kezdődtek, hiszen át kellett venni, és minőségileg ellenőrizni a beérkező
+                                    árukat. Nap mint nap frissen el kellett készíteni azokat az ételeket, melyek a
+                                    legnagyobb valószínűség szerint aznap el is fogytak. Nyitás előtt <strong>árú
+                                        rendelés</strong>,
+                                    némi <strong>social media</strong> kommunikáció, majd egészen zárásig
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kapcsolat" class="dark-section">
+        <div class="last-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center header">Kapcsolat</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row flex-lg-row-reverse align-items-center">
+                    <div class="col-lg-6 pb-4 pb-sm-0 pb-md-0">
+                        <h3 style="font-size: 40px;" class="text-center">Forduljon hozzám bizalommal!</h3>
+                        <div class="contact-info text-center"
+                            style="padding-top: 30px; margin-top:30px;border-top: solid">
+                            <i class="fa fa-phone fa-2xl" aria-hidden="true"></i>
+                            <span class="pt-5" style="font-size: 25px;padding-left: 20px;font-weight: bolder;">+36 30
+                                549
+                                39 23</span>
+                        </div>
+                        <div class="contact-info text-center"
+                            style="padding-top: 30px; margin-top:30px;border-top: solid">
+                            <i class="fa fa-envelope fa-2xl" aria-hidden="true"></i>
+                            <span class="pt-5" style="font-size: 25px;padding-left: 20px;"><a
+                                    href="mailto:contact@regospeter.com">contact@regospeter.com</a></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                        <img src="./assets/images/main.png" style="max-width: 100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid light-section">
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 border-top">
+            <div class="col-md-4 text-center">
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Regős Péter</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <!-- HACCP Modal -->
+    <div class="modal fade" id="haccpModal" tabindex="-1" aria-labelledby="haccpModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="haccpModal">HACCP Tanácsadás</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EU Modal -->
+    <div class="modal fade" id="euModal" tabindex="-1" aria-labelledby="euModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="euModal">EU Pályázatíró Tanácsadás</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HR Modal -->
+    <div class="modal fade" id="hrModal" tabindex="-1" aria-labelledby="hrModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="hrModal">HR gyakorlati Tanácsadás</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Extra Modal -->
+    <div class="modal fade" id="extraModal" tabindex="-1" aria-labelledby="extraModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="extraModal">???</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Leírás kicsit bővebben, hogy mi ez.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/scripts/site.js"></script>
+</body>
+
+</html>
